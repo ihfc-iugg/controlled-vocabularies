@@ -1,4 +1,6 @@
 # One group per ecosystem, so each update cycle arrives as a single pull request.
+# Labels on this repository describe changes to the vocabularies, so dependency
+# pull requests carry none. An empty list also turns off Dependabot's defaults.
 version: 2
 updates:
   - package-ecosystem: "uv"
@@ -8,9 +10,7 @@ updates:
       day: "monday"
       time: "09:00"
     open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-      - "python"
+    labels: []
     commit-message:
       prefix: "chore"
       include: "scope"
@@ -30,9 +30,7 @@ updates:
       day: "monday"
       time: "09:00"
     open-pull-requests-limit: 3
-    labels:
-      - "dependencies"
-      - "github-actions"
+    labels: []
     commit-message:
       prefix: "chore"
       include: "scope"
