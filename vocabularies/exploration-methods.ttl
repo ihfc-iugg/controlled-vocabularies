@@ -47,13 +47,13 @@ ihfc:exploration-methods
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
         :drilling ,
-        :drilling_clustering ,
+        :drilling-clustering ,
         :indirect ,
         :mining ,
         :other ,
-        :probing_clustering ,
-        :probing_offshore ,
-        :probing_onshore ,
+        :probing-clustering ,
+        :probing-offshore ,
+        :probing-onshore ,
         :tunneling ,
         :unspecified ;
     skos:prefLabel "Exploration methods"@en ;
@@ -68,7 +68,7 @@ ihfc:exploration-methods
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
-:drilling_clustering
+:drilling-clustering
     a skos:Concept ;
     skos:definition "Drilling in which the entry stands for a cluster of boreholes close together rather than for a single borehole."@en ;
     skos:hiddenLabel "Drilling-Clustering"@en ;
@@ -104,7 +104,7 @@ ihfc:exploration-methods
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
-:probing_clustering
+:probing-clustering
     a skos:Concept ;
     skos:definition "Probing in which the entry stands for a cluster of probe penetrations close together rather than for a single penetration."@en ;
     skos:hiddenLabel "Probing-Clustering"@en ;
@@ -113,7 +113,7 @@ ihfc:exploration-methods
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
-:probing_offshore
+:probing-offshore
     a skos:Concept ;
     skos:altLabel "Probing (offshore/ocean)"@en ;
     skos:definition "A probe was pushed into soft sediment at the sea floor."@en ;
@@ -123,7 +123,7 @@ ihfc:exploration-methods
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
-:probing_onshore
+:probing-onshore
     a skos:Concept ;
     skos:altLabel "Probing (onshore/lake, river, etc.)"@en ;
     skos:definition "A probe was pushed into soft sediment on land or at the bed of a lake, river or other inland water."@en ;

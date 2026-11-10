@@ -9,7 +9,7 @@ documentation use these terms as defined here.
 | **Concept** | One entry in a vocabulary (`skos:Concept`). It has a label and, eventually, a definition. | "term", "option", "value" |
 | **Collection** | A named group of concepts within one vocabulary (`skos:Collection`), such as the onshore and offshore geographic environments. A collection groups concepts and is not itself one. | "category" |
 | **Address** | The URI that identifies a vocabulary, concept or collection. A concept's address is its vocabulary's address, a slash, and its identifier. Once published, an address is permanent. | "URL", "ID" |
-| **Identifier** | The last part of a concept's address (`bullard` in `…/heat-flow-method/bullard`). Databases that use these vocabularies store it, so it never changes. | "key", "slug" |
+| **Identifier** | The last part of a concept's address (`bullard` in `…/heat-flow-method/bullard`). Databases that use these vocabularies store it, so it never changes. Words in it are joined by hyphens, never underscores (`outrigger-ewing`, `HT-FTpert`), and acronyms stay in capitals. | "key", "slug" |
 | **Label** | The name of a concept as people read it (`skos:prefLabel`). One per language. | "name", "title" |
 | **Description** | The sentence that says what a vocabulary covers (`dcterms:description` on the concept scheme). | "definition", for a vocabulary |
 | **Definition** | The sentence that says what a concept means (`skos:definition`). One per language. | "description" |

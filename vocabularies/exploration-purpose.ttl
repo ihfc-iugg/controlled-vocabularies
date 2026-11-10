@@ -54,7 +54,7 @@ ihfc:exploration-purpose
         :other ,
         :research ,
         :tunneling ,
-        :underground_storage ,
+        :underground-storage ,
         :unspecified ;
     skos:prefLabel "Exploration purposes"@en ;
     skos:scopeNote "Lists the values allowed in the field explo_purpose of the Global Heat Flow Database."@en ;
@@ -125,7 +125,7 @@ ihfc:exploration-purpose
     skos:topConceptOf ihfc:exploration-purpose ;
 .
 
-:underground_storage
+:underground-storage
     a skos:Concept ;
     skos:definition "The excavation was made to store material underground, such as gas or carbon dioxide."@en ;
     skos:inScheme ihfc:exploration-purpose ;

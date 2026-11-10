@@ -56,12 +56,12 @@ ihfc:temperature-method
         :EGRT ,
         :GRT ,
         :GTM ,
-        :HT_FT ,
-        :HT_FTpert ,
+        :HT-FT ,
+        :HT-FTpert ,
         :LOGeq ,
         :LOGpert ,
-        :ODTT_PC ,
-        :ODTT_TP ,
+        :ODTT-PC ,
+        :ODTT-TP ,
         :RTDeq ,
         :RTDpert ,
         :SUR ,
@@ -69,7 +69,7 @@ ihfc:temperature-method
         :cBHT ,
         :cDST ,
         :cDTS ,
-        :cHT_FT ,
+        :cHT-FT ,
         :cLOG ,
         :cRTD ,
         :other ,
@@ -148,14 +148,14 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:cHT_FT
+:cHT-FT
     a skos:Concept ;
     skos:definition "High-temperature fluid-temperature measurement in perturbed conditions, corrected for the perturbation."@en ;
     skos:hiddenLabel "cHT-FT"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:notation "cHT-FT" ;
     skos:prefLabel "High-temperature fluid temperature, corrected"@en ;
-    skos:related :HT_FTpert ;
+    skos:related :HT-FTpert ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 
@@ -262,7 +262,7 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:HT_FT
+:HT-FT
     a skos:Concept ;
     skos:definition "High-temperature fluid-temperature measurement in equilibrium conditions."@en ;
     skos:hiddenLabel "HT-FTeq"@en ;
@@ -272,14 +272,14 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:HT_FTpert
+:HT-FTpert
     a skos:Concept ;
     skos:definition "High-temperature fluid-temperature measurement in perturbed conditions."@en ;
     skos:hiddenLabel "HT-FTpert"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:notation "HT-FTpert" ;
     skos:prefLabel "High-temperature fluid temperature, perturbed"@en ;
-    skos:related :cHT_FT ;
+    skos:related :cHT-FT ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 
@@ -306,7 +306,7 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:ODTT_PC
+:ODTT-PC
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Temperature measured with the ocean drilling temperature tool mounted on a piston corer."@en ;
@@ -317,7 +317,7 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:ODTT_TP
+:ODTT-TP
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Temperature measured with the ocean drilling temperature tool as a thermistor probe."@en ;

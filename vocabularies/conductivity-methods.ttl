@@ -105,7 +105,7 @@ ihfc:conductivity-methods
     skos:prefLabel "Probe"@en ;
 .
 
-:well_log
+:well-log
     a skos:Collection ;
     skos:definition "Methods that derive the conductivity from well-log data."@en ;
     skos:member

@@ -51,7 +51,7 @@ ihfc:temperature-corrections
         :hornerPlot ,
         :inverseNM ,
         :lineSourceExplosion ,
-        :not_corrected ,
+        :not-corrected ,
         :other ,
         :unspecified ;
     skos:prefLabel "Temperature correction methods"@en ;
@@ -102,7 +102,7 @@ ihfc:temperature-corrections
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
-:not_corrected
+:not-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "No correction for drilling perturbations was applied to the temperature."@en ;
