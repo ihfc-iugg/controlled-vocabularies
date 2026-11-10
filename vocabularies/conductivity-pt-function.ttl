@@ -86,7 +86,7 @@ ihfc:conductivity-pt-function
         :VosteenSchellschmidt2003 ,
         :ZothHaenal1988 ,
         :other ,
-        :site_specific ,
+        :site-specific ,
         :unspecified ;
     skos:prefLabel "Thermal conductivity pressure and temperature functions"@en ;
     skos:scopeNote "Lists the values allowed in the field tc_pT_function of the Global Heat Flow Database."@en ;
@@ -108,7 +108,7 @@ ihfc:conductivity-pt-function
     skos:prefLabel "Pressure"@en ;
 .
 
-:pressure_temperature
+:pressure-temperature
     a skos:Collection ;
     skos:definition "Published relationships that correct thermal conductivity for pressure and temperature together."@en ;
     skos:member
@@ -475,7 +475,7 @@ ihfc:conductivity-pt-function
     skos:topConceptOf ihfc:conductivity-pt-function ;
 .
 
-:site_specific
+:site-specific
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,

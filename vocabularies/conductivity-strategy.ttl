@@ -51,7 +51,7 @@ ihfc:conductivity-strategy
         :other ,
         :random ,
         :unspecified ,
-        :well_log ;
+        :well-log ;
     skos:prefLabel "Thermal conductivity strategies"@en ;
     skos:scopeNote "Lists the values allowed in the field tc_strategy of the Global Heat Flow Database."@en ;
 .
@@ -97,7 +97,7 @@ ihfc:conductivity-strategy
     skos:topConceptOf ihfc:conductivity-strategy ;
 .
 
-:well_log
+:well-log
     a skos:Concept ;
     skos:definition "The conductivity over the heat-flow interval was derived by interpreting well logs."@en ;
     skos:inScheme ihfc:conductivity-strategy ;

@@ -13,6 +13,9 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   after it are unchanged.
 - Each vocabulary's `rdfs:seeAlso` points at the repository's new address,
   `https://github.com/ihfc-iugg/controlled-vocabularies`.
+- Identifiers join words with hyphens instead of underscores: `well_log` is now `well-log`
+  and `HT_FTpert` is `HT-FTpert`. Identifiers without an underscore, and the capitals in
+  acronyms, are unchanged, and so are the codes in `skos:notation`.
 
 ### Added
 

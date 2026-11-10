@@ -46,10 +46,10 @@ ihfc:geographic-environments
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
-        :offshore_continental ,
-        :offshore_marine ,
-        :onshore_continental ,
-        :onshore_marine ,
+        :offshore-continental ,
+        :offshore-marine ,
+        :onshore-continental ,
+        :onshore-marine ,
         :unspecified ;
     skos:prefLabel "Geographic environments"@en ;
     skos:scopeNote "Lists the values allowed in the field environment of the Global Heat Flow Database."@en ;
@@ -59,8 +59,8 @@ ihfc:geographic-environments
     a skos:Collection ;
     skos:definition "Environments where the site lies under the sea."@en ;
     skos:member
-        :offshore_continental ,
-        :offshore_marine ;
+        :offshore-continental ,
+        :offshore-marine ;
     skos:prefLabel "Offshore environments"@en ;
 .
 
@@ -68,12 +68,12 @@ ihfc:geographic-environments
     a skos:Collection ;
     skos:definition "Environments where the site lies on land, including under inland water."@en ;
     skos:member
-        :onshore_continental ,
-        :onshore_marine ;
+        :onshore-continental ,
+        :onshore-marine ;
     skos:prefLabel "Onshore environments"@en ;
 .
 
-:offshore_continental
+:offshore-continental
     a skos:Concept ;
     skos:definition "The site is under the sea on continental crust, for example on the continental shelf or slope."@en ;
     skos:inScheme ihfc:geographic-environments ;
@@ -81,7 +81,7 @@ ihfc:geographic-environments
     skos:topConceptOf ihfc:geographic-environments ;
 .
 
-:offshore_marine
+:offshore-marine
     a skos:Concept ;
     skos:definition "The site is in the part of the ocean beyond the continental shelf edge. This includes deep-sea regions and open water with seamounts, mid-ocean ridges and abyssal plains."@en ;
     skos:inScheme ihfc:geographic-environments ;
@@ -89,7 +89,7 @@ ihfc:geographic-environments
     skos:topConceptOf ihfc:geographic-environments ;
 .
 
-:onshore_continental
+:onshore-continental
     a skos:Concept ;
     skos:definition "The site is on land, on continental crust."@en ;
     skos:inScheme ihfc:geographic-environments ;
@@ -97,7 +97,7 @@ ihfc:geographic-environments
     skos:topConceptOf ihfc:geographic-environments ;
 .
 
-:onshore_marine
+:onshore-marine
     a skos:Concept ;
     skos:definition "The site is on land but under inland water, for example the bed of a lake or river."@en ;
     skos:hiddenLabel "Onshore (lake-river-etc.)"@en ;

@@ -51,12 +51,12 @@ ihfc:heat-flow-corrections
         :consideredT ,
         :corrected ,
         :driftCorrected ,
+        :not-recognized ,
         :notConsidered ,
         :notCorrected ,
-        :not_recognized ,
-        :present_corrected ,
-        :present_not_corrected ,
-        :present_not_significant ,
+        :present-corrected ,
+        :present-not-corrected ,
+        :present-not-significant ,
         :tiltCorrected ,
         :unspecified ;
     skos:prefLabel "Correction flags"@en ;
@@ -67,10 +67,10 @@ ihfc:heat-flow-corrections
     a skos:Collection ;
     skos:definition "Values for the flags recording whether an effect on the heat flow was present and corrected. They apply to the fields corr_S_flag, corr_E_flag, corr_TOPO_flag, corr_PAL_flag, corr_SUR_flag, corr_CONV_flag and corr_HR_flag."@en ;
     skos:member
-        :not_recognized ,
-        :present_corrected ,
-        :present_not_corrected ,
-        :present_not_significant ,
+        :not-recognized ,
+        :present-corrected ,
+        :present-not-corrected ,
+        :present-not-significant ,
         :unspecified ;
     skos:prefLabel "Environmental effect flags"@en ;
 .
@@ -151,7 +151,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:not_recognized
+:not-recognized
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The effect was not recognized at the site."@en ;
@@ -182,7 +182,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:present_corrected
+:present-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The effect was present and a correction for it was applied to the reported heat-flow value."@en ;
@@ -191,7 +191,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:present_not_corrected
+:present-not-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The effect was present and no correction for it was applied to the reported heat-flow value."@en ;
@@ -200,7 +200,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:present_not_significant
+:present-not-significant
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Present not significant"@en ;
