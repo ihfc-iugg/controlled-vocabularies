@@ -15,7 +15,9 @@ infrastructure needs a stated reason in the pull request.
 
 ### Article III — Anti-Abstraction
 No wrapper layers, base classes or indirection without a present, concrete second use. Prefer
-duplication over the wrong abstraction.
+duplication over the wrong abstraction. A second use also counts as present when it is in
+another approved specification built in the same batch, such as several features specified
+together from one prototype.
 
 ### Article IV — Integration-First
 The vocabularies are an interface other systems import. A change is judged by what those
@@ -91,4 +93,4 @@ Read at review; applies to every change.
 
 ---
 
-**Version**: 4.0.0 | **Ratified**: 2026-10-27 | **Last Amended**: 2026-10-29
+**Version**: 4.0.1 | **Ratified**: 2026-10-27 | **Last Amended**: 2026-11-11
