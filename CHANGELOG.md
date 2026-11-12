@@ -19,6 +19,10 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
 
 ### Added
 
+- Two collections in the exploration methods: `borehole-and-mine` (drilling, drilling and
+  clustering, indirect, mining and tunnelling) and `probe-sensing` (onshore, offshore and
+  clustered probing). They are the two domains of Table 4 of Fuchs et al. (2023), whose data
+  are assessed as borehole and mine data or as probe-sensing data.
 - A documentation site, with a page for every vocabulary, concept and collection, and its
   RDF in every format beside it.
 - `CONTRIBUTORS.md`, listing everyone who has contributed to the vocabularies with their

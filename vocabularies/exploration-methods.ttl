@@ -60,6 +60,28 @@ ihfc:exploration-methods
     skos:scopeNote "Lists the values allowed in the field explo_method of the Global Heat Flow Database."@en ;
 .
 
+:borehole-and-mine
+    a skos:Collection ;
+    skos:definition "Exploration methods that reach the rock through a borehole, a mine or a tunnel, or that estimate the heat flow indirectly. Their data are assessed as borehole and mine data (Fuchs et al., 2023, Table 4)."@en ;
+    skos:member
+        :drilling ,
+        :drilling-clustering ,
+        :indirect ,
+        :mining ,
+        :tunneling ;
+    skos:prefLabel "Borehole and mine"@en ;
+.
+
+:probe-sensing
+    a skos:Collection ;
+    skos:definition "Exploration methods that push a probe into soft sediment, onshore or offshore. Their data are assessed as probe-sensing data (Fuchs et al., 2023, Table 4)."@en ;
+    skos:member
+        :probing-clustering ,
+        :probing-offshore ,
+        :probing-onshore ;
+    skos:prefLabel "Probe sensing"@en ;
+.
+
 :drilling
     a skos:Concept ;
     skos:definition "The temperature sensors reached the rock through a borehole."@en ;
