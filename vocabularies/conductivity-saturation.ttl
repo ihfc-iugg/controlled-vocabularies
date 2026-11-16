@@ -57,6 +57,16 @@ ihfc:conductivity-saturation
     skos:scopeNote "Lists the values allowed in the field tc_saturation of the Global Heat Flow Database."@en ;
 .
 
+:saturated
+    a skos:Collection ;
+    skos:definition "Saturation states in which the conductivity is that of rock whose pores are filled with fluid, measured or calculated."@en ;
+    skos:member
+        :saturated-calculated ,
+        :saturated-in-situ ,
+        :saturated-measured ;
+    skos:prefLabel "Saturated"@en ;
+.
+
 :dry-measured
     a skos:Concept ;
     dcterms:source

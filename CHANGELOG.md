@@ -33,6 +33,13 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   - The pressure and temperature functions start with `T`, `p` or `pT`, so one author's
     functions for each are told apart, and `ZothHaenal1988` and `Radcliff1960` are spelt as
     the authors' names are (`T-zoth-haenel-1988`, `pT-ratcliffe-1960`).
+- Collections that held one concept, or that grouped concepts only the way the quality
+  scoring does, are gone. In the conductivity conditions `ambient` and `in-situ` replace
+  `actual`, `recorded`, `replicated` and `corrected`. In the conductivity sources `measured`
+  and `estimated` replace `computation` and `in-situ`, and `well-log` is estimated, because
+  the conductivity is derived from the logs rather than measured. The conductivity methods
+  lose `other`, which held only `unspecified`. The correction flags' `generic`, `insitu`
+  and `temperature` give way to one collection per flag column.
 - Labels and definitions are checked against the 2026.03 submission template and its
   description:
   - The three `HT-FT` temperature methods are hydraulic test formation temperatures, measured
@@ -57,10 +64,22 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
 
 - `outrigger-ewing` in the heat-flow probes: the Ewing outrigger probe used without a corer,
   which the 2026.03 submission template lists.
-- Two collections in the exploration methods: `borehole-and-mine` (drilling, drilling and
-  clustering, indirect, mining and tunnelling) and `probe-sensing` (onshore, offshore and
-  clustered probing). They are the two domains of Table 4 of Fuchs et al. (2023), whose data
-  are assessed as borehole and mine data or as probe-sensing data.
+- Two collections in the exploration methods: `excavation` (drilling, drilling and
+  clustering, mining and tunnelling) and `probe-sensing` (onshore, offshore and clustered
+  probing).
+- A collection for each column of the submission template that shares a vocabulary with
+  other columns, so each column's accepted values can change on their own:
+  - in the correction flags, one for each of the nine flag columns, from `in-situ`
+    (`corr_IS_flag`) and `instrumental` (`corr_T_flag`) to `heat-refraction` (`corr_HR_flag`)
+  - in the temperature methods, `top` and `bottom`. The bottom of the interval does not
+    accept `surface`.
+- Collections that group concepts by what they are:
+  - temperature methods: `continuous-log`, `point-measurement` and `estimated` for the kind
+    of measurement, and `equilibrium`, `perturbed` and `corrected` for the thermal state of
+    the borehole
+  - conductivity sources: `measured` and `estimated`
+  - conductivity conditions: `ambient` and `in-situ`
+  - conductivity saturation: `saturated`
 - A documentation site, with a page for every vocabulary, concept and collection, and its
   RDF in every format beside it.
 - `CONTRIBUTORS.md`, listing everyone who has contributed to the vocabularies with their

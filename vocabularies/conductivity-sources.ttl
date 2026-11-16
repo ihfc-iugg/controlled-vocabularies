@@ -60,22 +60,14 @@ ihfc:conductivity-sources
     skos:scopeNote "Lists the values allowed in the field tc_source of the Global Heat Flow Database."@en ;
 .
 
-:computation
+:estimated
     a skos:Collection ;
-    skos:definition "Sources where the conductivity was computed or taken from published values, not measured."@en ;
+    skos:definition "Sources where the conductivity was not measured but derived from other data or taken from published values."@en ;
     skos:member
         :assumed-from-literature ,
-        :mineral-computation ;
-    skos:prefLabel "Computation"@en ;
-.
-
-:in-situ
-    a skos:Collection ;
-    skos:definition "Sources where the conductivity was obtained in the ground, by a probe or from well logs."@en ;
-    skos:member
-        :in-situ-probe ,
+        :mineral-computation ,
         :well-log ;
-    skos:prefLabel "In-situ"@en ;
+    skos:prefLabel "Estimated"@en ;
 .
 
 :laboratory
@@ -87,6 +79,18 @@ ihfc:conductivity-sources
         :cutting-samples ,
         :outcrop-samples ;
     skos:prefLabel "Laboratory"@en ;
+.
+
+:measured
+    a skos:Collection ;
+    skos:definition "Sources where the conductivity was measured, in the ground by a probe or on rock material in a laboratory."@en ;
+    skos:member
+        :core-log ,
+        :core-samples ,
+        :cutting-samples ,
+        :in-situ-probe ,
+        :outcrop-samples ;
+    skos:prefLabel "Measured"@en ;
 .
 
 :assumed-from-literature

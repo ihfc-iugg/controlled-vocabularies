@@ -89,13 +89,6 @@ ihfc:conductivity-methods
     skos:prefLabel "Laboratory"@en ;
 .
 
-:other
-    a skos:Collection ;
-    skos:definition "Values that name no specific method."@en ;
-    skos:member :unspecified ;
-    skos:prefLabel "Not specified"@en ;
-.
-
 :probe
     a skos:Collection ;
     skos:definition "Methods that measure the conductivity in the ground with a probe."@en ;
