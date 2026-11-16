@@ -46,18 +46,18 @@ ihfc:heat-flow-corrections
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
-        :consideredP ,
-        :consideredPT ,
-        :consideredT ,
+        :considered-T ,
+        :considered-p ,
+        :considered-pT ,
         :corrected ,
-        :driftCorrected ,
-        :not-recognized ,
-        :notConsidered ,
-        :notCorrected ,
+        :drift-corrected ,
+        :not-considered ,
         :present-corrected ,
-        :present-not-corrected ,
-        :present-not-significant ,
-        :tiltCorrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :tilt-corrected ,
+        :uncorrected ,
+        :unrecognized ,
         :unspecified ;
     skos:prefLabel "Correction flags"@en ;
     skos:scopeNote "Lists the values allowed in the fields corr_IS_flag, corr_T_flag, corr_S_flag, corr_E_flag, corr_TOPO_flag, corr_PAL_flag, corr_SUR_flag, corr_CONV_flag and corr_HR_flag of the Global Heat Flow Database."@en ;
@@ -67,10 +67,10 @@ ihfc:heat-flow-corrections
     a skos:Collection ;
     skos:definition "Values for the flags recording whether an effect on the heat flow was present and corrected. They apply to the fields corr_S_flag, corr_E_flag, corr_TOPO_flag, corr_PAL_flag, corr_SUR_flag, corr_CONV_flag and corr_HR_flag."@en ;
     skos:member
-        :not-recognized ,
         :present-corrected ,
-        :present-not-corrected ,
-        :present-not-significant ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
         :unspecified ;
     skos:prefLabel "Environmental effect flags"@en ;
 .
@@ -79,10 +79,10 @@ ihfc:heat-flow-corrections
     a skos:Collection ;
     skos:definition "Values for the flag recording whether in-situ pressure and temperature were considered for the thermal conductivity (corr_IS_flag)."@en ;
     skos:member
-        :consideredP ,
-        :consideredPT ,
-        :consideredT ,
-        :notConsidered ,
+        :considered-T ,
+        :considered-p ,
+        :considered-pT ,
+        :not-considered ,
         :unspecified ;
     skos:prefLabel "In-situ conditions flags"@en ;
 .
@@ -92,14 +92,14 @@ ihfc:heat-flow-corrections
     skos:definition "Values for the flag recording whether instrumental corrections were applied to the measured temperatures (corr_T_flag)."@en ;
     skos:member
         :corrected ,
-        :driftCorrected ,
-        :notCorrected ,
-        :tiltCorrected ,
+        :drift-corrected ,
+        :tilt-corrected ,
+        :uncorrected ,
         :unspecified ;
     skos:prefLabel "Temperature correction flags"@en ;
 .
 
-:consideredP
+:considered-p
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Considered – p"@en ;
@@ -110,7 +110,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:consideredPT
+:considered-pT
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Considered – pT"@en ;
@@ -121,7 +121,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:consideredT
+:considered-T
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Considered – T"@en ;
@@ -142,7 +142,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:driftCorrected
+:drift-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The measured temperatures were corrected for drift of the temperature instrument."@en ;
@@ -151,17 +151,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:not-recognized
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "The effect was not recognized at the site."@en ;
-    skos:hiddenLabel "not recognized"@en ;
-    skos:inScheme ihfc:heat-flow-corrections ;
-    skos:prefLabel "Not recognized"@en ;
-    skos:topConceptOf ihfc:heat-flow-corrections ;
-.
-
-:notConsidered
+:not-considered
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "not Considered"@en ;
@@ -169,16 +159,6 @@ ihfc:heat-flow-corrections
     skos:hiddenLabel "not considered"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Not considered"@en ;
-    skos:topConceptOf ihfc:heat-flow-corrections ;
-.
-
-:notCorrected
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "No instrumental correction was applied to the measured temperatures."@en ;
-    skos:hiddenLabel "not corrected"@en ;
-    skos:inScheme ihfc:heat-flow-corrections ;
-    skos:prefLabel "Not corrected"@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
@@ -191,16 +171,7 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:present-not-corrected
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "The effect was present and no correction for it was applied to the reported heat-flow value."@en ;
-    skos:inScheme ihfc:heat-flow-corrections ;
-    skos:prefLabel "Present and not corrected"@en ;
-    skos:topConceptOf ihfc:heat-flow-corrections ;
-.
-
-:present-not-significant
+:present-insignificant
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Present not significant"@en ;
@@ -211,12 +182,41 @@ ihfc:heat-flow-corrections
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
-:tiltCorrected
+:present-uncorrected
+    a skos:Concept ;
+    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
+    skos:definition "The effect was present and no correction for it was applied to the reported heat-flow value."@en ;
+    skos:inScheme ihfc:heat-flow-corrections ;
+    skos:prefLabel "Present and not corrected"@en ;
+    skos:topConceptOf ihfc:heat-flow-corrections ;
+.
+
+:tilt-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The measured temperatures were corrected for the tilt of the probe."@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Tilt corrected"@en ;
+    skos:topConceptOf ihfc:heat-flow-corrections ;
+.
+
+:uncorrected
+    a skos:Concept ;
+    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
+    skos:definition "No instrumental correction was applied to the measured temperatures."@en ;
+    skos:hiddenLabel "not corrected"@en ;
+    skos:inScheme ihfc:heat-flow-corrections ;
+    skos:prefLabel "Not corrected"@en ;
+    skos:topConceptOf ihfc:heat-flow-corrections ;
+.
+
+:unrecognized
+    a skos:Concept ;
+    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
+    skos:definition "The effect was not recognized at the site."@en ;
+    skos:hiddenLabel "not recognized"@en ;
+    skos:inScheme ihfc:heat-flow-corrections ;
+    skos:prefLabel "Not recognized"@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 

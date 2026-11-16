@@ -46,15 +46,15 @@ ihfc:conductivity-conditions
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
-        :actualInSitu ,
-        :correctedP ,
-        :correctedPT ,
-        :correctedT ,
-        :recordedAmbient ,
-        :replicatedP ,
-        :replicatedPT ,
-        :replicatedT ,
-        :unrecordedAmbient ,
+        :actual-in-situ ,
+        :corrected-T ,
+        :corrected-p ,
+        :corrected-pT ,
+        :recorded-ambient ,
+        :replicated-T ,
+        :replicated-p ,
+        :replicated-pT ,
+        :unrecorded-ambient ,
         :unspecified ;
     skos:prefLabel "Thermal conductivity measurement conditions"@en ;
     skos:scopeNote "Lists the values allowed in the field tc_pT_conditions of the Global Heat Flow Database."@en ;
@@ -63,7 +63,7 @@ ihfc:conductivity-conditions
 :actual
     a skos:Collection ;
     skos:definition "Determinations made at the actual conditions of the depth interval of the heat-flow determination."@en ;
-    skos:member :actualInSitu ;
+    skos:member :actual-in-situ ;
     skos:prefLabel "Actual conditions"@en ;
 .
 
@@ -71,16 +71,16 @@ ihfc:conductivity-conditions
     a skos:Collection ;
     skos:definition "Determinations made under laboratory pressure and temperature conditions and then corrected to the conditions of the target depth."@en ;
     skos:member
-        :correctedP ,
-        :correctedPT ,
-        :correctedT ;
+        :corrected-T ,
+        :corrected-p ,
+        :corrected-pT ;
     skos:prefLabel "Corrected conditions"@en ;
 .
 
 :recorded
     a skos:Collection ;
     skos:definition "Determinations whose pressure and temperature conditions were recorded when the conductivity was measured."@en ;
-    skos:member :recordedAmbient ;
+    skos:member :recorded-ambient ;
     skos:prefLabel "Recorded conditions"@en ;
 .
 
@@ -88,13 +88,13 @@ ihfc:conductivity-conditions
     a skos:Collection ;
     skos:definition "Determinations where the conditions of the target depth are replicated under laboratory conditions."@en ;
     skos:member
-        :replicatedP ,
-        :replicatedPT ,
-        :replicatedT ;
+        :replicated-T ,
+        :replicated-p ,
+        :replicated-pT ;
     skos:prefLabel "Replicated conditions"@en ;
 .
 
-:actualInSitu
+:actual-in-situ
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -105,7 +105,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:correctedP
+:corrected-p
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The conductivity was measured under laboratory pressure and then corrected to the pressure of the target depth."@en ;
@@ -114,7 +114,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:correctedPT
+:corrected-pT
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The conductivity was measured under laboratory pressure and temperature and then corrected to the pressure and temperature of the target depth."@en ;
@@ -123,7 +123,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:correctedT
+:corrected-T
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The conductivity was measured under laboratory temperature and then corrected to the temperature of the target depth."@en ;
@@ -132,7 +132,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:recordedAmbient
+:recorded-ambient
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The conductivity was measured at ambient laboratory pressure and temperature, and those conditions were recorded."@en ;
@@ -141,7 +141,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:replicatedP
+:replicated-p
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -152,7 +152,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:replicatedPT
+:replicated-pT
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -163,7 +163,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:replicatedT
+:replicated-T
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -174,7 +174,7 @@ ihfc:conductivity-conditions
     skos:topConceptOf ihfc:conductivity-conditions ;
 .
 
-:unrecordedAmbient
+:unrecorded-ambient
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "The conductivity was measured at ambient laboratory pressure and temperature, and those conditions were not recorded."@en ;

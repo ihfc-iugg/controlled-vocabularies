@@ -46,19 +46,19 @@ ihfc:temperature-corrections
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
-        :aapg ,
-        :cylinderSource ,
-        :hornerPlot ,
-        :inverseNM ,
-        :lineSourceExplosion ,
-        :not-corrected ,
+        :AAPG ,
+        :cylinder-source ,
+        :horner-plot ,
+        :inverse-numerical-modelling ,
+        :line-source-explosion ,
         :other ,
+        :uncorrected ,
         :unspecified ;
     skos:prefLabel "Temperature correction methods"@en ;
     skos:scopeNote "Lists the values allowed in the fields T_corr_top and T_corr_bottom of the Global Heat Flow Database."@en ;
 .
 
-:aapg
+:AAPG
     a skos:Concept ;
     skos:definition "Empirical correction of bottom-hole temperatures as a function of depth, published by Harrison and others in 1983 and used for the AAPG Geothermal Survey of North America database."@en ;
     skos:inScheme ihfc:temperature-corrections ;
@@ -66,7 +66,7 @@ ihfc:temperature-corrections
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
-:cylinderSource
+:cylinder-source
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Correction of a drilling disturbance by modelling the borehole as a cylindrical heat source that cools to the formation temperature after drilling."@en ;
@@ -75,7 +75,7 @@ ihfc:temperature-corrections
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
-:hornerPlot
+:horner-plot
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Correction of a bottom-hole temperature by plotting temperature against the logarithm of a time ratio, using the time since circulation stopped, and extrapolating to the undisturbed formation temperature."@en ;
@@ -84,7 +84,7 @@ ihfc:temperature-corrections
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
-:inverseNM
+:inverse-numerical-modelling
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Correction of a drilling disturbance by numerically modelling the temperature recovery and adjusting the model until it fits the measured temperatures."@en ;
@@ -93,22 +93,12 @@ ihfc:temperature-corrections
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
-:lineSourceExplosion
+:line-source-explosion
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Correction of a drilling disturbance by modelling the borehole as a line source of heat that relaxes after drilling."@en ;
     skos:inScheme ihfc:temperature-corrections ;
     skos:prefLabel "Line source explosion method"@en ;
-    skos:topConceptOf ihfc:temperature-corrections ;
-.
-
-:not-corrected
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "No correction for drilling perturbations was applied to the temperature."@en ;
-    skos:hiddenLabel "not corrected"@en ;
-    skos:inScheme ihfc:temperature-corrections ;
-    skos:prefLabel "Not corrected"@en ;
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
@@ -118,6 +108,16 @@ ihfc:temperature-corrections
     skos:definition "A published correction that is not listed. The author or DOI must be given in the comment field."@en ;
     skos:inScheme ihfc:temperature-corrections ;
     skos:prefLabel "Other published correction"@en ;
+    skos:topConceptOf ihfc:temperature-corrections ;
+.
+
+:uncorrected
+    a skos:Concept ;
+    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
+    skos:definition "No correction for drilling perturbations was applied to the temperature."@en ;
+    skos:hiddenLabel "not corrected"@en ;
+    skos:inScheme ihfc:temperature-corrections ;
+    skos:prefLabel "Not corrected"@en ;
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 

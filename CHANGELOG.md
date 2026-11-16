@@ -9,16 +9,35 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
 
 - Addresses start with `https://w3id.org/ihfc-iugg/vocabularies/`, a permanent address
   that does not depend on where the vocabularies are hosted
-  (`https://w3id.org/ihfc-iugg/vocabularies/heat-flow-method/bullard`). The identifiers
-  after it are unchanged.
+  (`https://w3id.org/ihfc-iugg/vocabularies/heat-flow-method/bullard`).
 - Each vocabulary's `rdfs:seeAlso` points at the repository's new address,
   `https://github.com/ihfc-iugg/controlled-vocabularies`.
-- Identifiers join words with hyphens instead of underscores: `well_log` is now `well-log`
-  and `HT_FTpert` is `HT-FTpert`. Identifiers without an underscore, and the capitals in
-  acronyms, are unchanged, and so are the codes in `skos:notation`.
+- Identifiers are written one way in every vocabulary: lowercase words joined by hyphens,
+  acronyms in capitals and the symbols `p` for pressure and `T` for temperature in their
+  usual case. `well_log` is now `well-log`, `hornerPlot` is `horner-plot`, `HT_FTpert` is
+  `HT-FT-perturbed`, `consideredPT` is `considered-pT` and `BirchClark1940` is
+  `T-birch-clark-1940`. The codes in `skos:notation` are unchanged. Each identifier the 2026.03
+  submission template needs is listed beside the template's term for it in
+  https://github.com/ihfc-iugg/controlled-vocabularies/issues/38.
+- Some identifiers now say what the concept is:
+  - `onshore-marine` is `onshore-lake-river`, for lakes and rivers on land.
+  - `outrigger-ewing` is `outrigger-ewing-corer` and `outrigger-lister` is
+    `outrigger-lister-corer`, the probes used with a corer. A plain name is a probe used
+    without one, so `outrigger-autonomous-no-corer` is `outrigger-autonomous` and
+    `outrigger-autonomous-with-corer` is `outrigger-autonomous-corer`.
+  - The temperature methods spell out their states: `LOGeq` is `log-equilibrium`, `DTSpert`
+    is `DTS-perturbed` and `cBHT` is `BHT-corrected`. Shortened words become words: `XEN`
+    is `xenolith`, `BLK` is `thermal-blanket` and `SUR` is `surface`.
+  - `not-corrected` and `notCorrected` are `uncorrected`, `not-recognized` is
+    `unrecognized` and `present-not-significant` is `present-insignificant`.
+  - The pressure and temperature functions start with `T`, `p` or `pT`, so one author's
+    functions for each are told apart, and `ZothHaenal1988` and `Radcliff1960` are spelt as
+    the authors' names are (`T-zoth-haenel-1988`, `pT-ratcliffe-1960`).
 
 ### Added
 
+- `outrigger-ewing` in the heat-flow probes: the Ewing outrigger probe used without a corer,
+  which the 2026.03 submission template lists.
 - Two collections in the exploration methods: `borehole-and-mine` (drilling, drilling and
   clustering, indirect, mining and tunnelling) and `probe-sensing` (onshore, offshore and
   clustered probing). They are the two domains of Table 4 of Fuchs et al. (2023), whose data

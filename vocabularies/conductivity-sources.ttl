@@ -50,7 +50,7 @@ ihfc:conductivity-sources
         :core-log ,
         :core-samples ,
         :cutting-samples ,
-        :insitu-probe ,
+        :in-situ-probe ,
         :mineral-computation ,
         :other ,
         :outcrop-samples ,
@@ -73,7 +73,7 @@ ihfc:conductivity-sources
     a skos:Collection ;
     skos:definition "Sources where the conductivity was obtained in the ground, by a probe or from well logs."@en ;
     skos:member
-        :insitu-probe ,
+        :in-situ-probe ,
         :well-log ;
     skos:prefLabel "In-situ"@en ;
 .
@@ -121,7 +121,7 @@ ihfc:conductivity-sources
     skos:topConceptOf ihfc:conductivity-sources ;
 .
 
-:insitu-probe
+:in-situ-probe
     a skos:Concept ;
     skos:definition "The conductivity was measured in the ground with a probe, for example a probe pushed into soft sediment."@en ;
     skos:inScheme ihfc:conductivity-sources ;
