@@ -15,6 +15,12 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     dcterms:bibliographicCitation "Fuchs, S., Beardsmore, G., Chiozzi, P., Espinoza-Ojeda, O. M., Gola, G., Gosnold, W., Harris, R., Jennings, S., Liu, S., Negrete-Aranda, R., Neumann, F., Norden, B., Poort, J., Rajver, D., Ray, L., Richards, M., Smith, J., Tanaka, A., and Verdoya, M. (2021). A new database structure for the IHFC Global Heat Flow Database. International Journal of Terrestrial Heat Flow and Applied Geothermics, 4(1), 1–14."@en ;
 .
 
+<https://doi.org/10.5880/fidgeo.2025.042>
+    a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Fuchs, S., Neumann, F., Balkan-Pazvantoğlu, E., Elbarbary, S., Petrunin, A. G., Jennings, S., Elger, K., Norden, B. (2025). Global Heat Flow Database Data Template. V. 2026.03. GFZ Data Services."@en ;
+    dcterms:title "Global Heat Flow Database Data Template"@en ;
+.
+
 <https://doi.org/10.5880/fidgeo.2026.065>
     a dcterms:BibliographicResource ;
     dcterms:bibliographicCitation "Jennings, Samuel; Neumann, Florian; Norden, Ben; Balkan-Pazvantoğlu, Elif; Elbarbary, Samah; Petrunin, Alexey G.; Elger, Kirsten; Fuchs, Sven (2026): IHFC Controlled Vocabularies for the Global Heat Flow Database. GFZ Data Services. https://doi.org/10.5880/fidgeo.2026.065"@en ;
@@ -43,15 +49,14 @@ ihfc:temperature-method
     dcterms:publisher <https://ror.org/04z8jg394> ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
-        <https://doi.org/10.31214/ijthfa.v4i1.62> ;
+        <https://doi.org/10.31214/ijthfa.v4i1.62> ,
+        <https://doi.org/10.5880/fidgeo.2025.042> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
         :BHT ,
         :BHT-corrected ,
         :BSR ,
         :CPD ,
-        :DST ,
-        :DST-corrected ,
         :DTS-corrected ,
         :DTS-equilibrium ,
         :DTS-perturbed ,
@@ -270,30 +275,6 @@ ihfc:temperature-method
     skos:topConceptOf ihfc:temperature-method ;
 .
 
-:DST
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Temperature measured during a drill stem test, a short flow test of a borehole interval, and not corrected for perturbations."@en ;
-    skos:hiddenLabel "DST"@en ;
-    skos:inScheme ihfc:temperature-method ;
-    skos:notation "DST" ;
-    skos:prefLabel "Drill stem test, uncorrected"@en ;
-    skos:related :DST-corrected ;
-    skos:topConceptOf ihfc:temperature-method ;
-.
-
-:DST-corrected
-    a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Temperature measured during a drill stem test, corrected for perturbations."@en ;
-    skos:hiddenLabel "cDST"@en ;
-    skos:inScheme ihfc:temperature-method ;
-    skos:notation "cDST" ;
-    skos:prefLabel "Drill stem test, corrected"@en ;
-    skos:related :DST ;
-    skos:topConceptOf ihfc:temperature-method ;
-.
-
 :DTS-corrected
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
@@ -364,32 +345,35 @@ ihfc:temperature-method
 
 :HT-FT-corrected
     a skos:Concept ;
-    skos:definition "High-temperature fluid-temperature measurement in perturbed conditions, corrected for the perturbation."@en ;
+    dcterms:source <https://doi.org/10.5880/fidgeo.2025.042> ;
+    skos:definition "Formation temperature measured during a hydraulic test, such as a drill-stem test or an aquifer test, under perturbed conditions and corrected for the perturbation."@en ;
     skos:hiddenLabel "cHT-FT"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:notation "cHT-FT" ;
-    skos:prefLabel "High-temperature fluid temperature, corrected"@en ;
+    skos:prefLabel "Hydraulic test formation temperature, corrected"@en ;
     skos:related :HT-FT-perturbed ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 
 :HT-FT-equilibrium
     a skos:Concept ;
-    skos:definition "High-temperature fluid-temperature measurement in equilibrium conditions."@en ;
+    dcterms:source <https://doi.org/10.5880/fidgeo.2025.042> ;
+    skos:definition "Formation temperature measured during a hydraulic test, such as a drill-stem test or an aquifer test, at thermal equilibrium."@en ;
     skos:hiddenLabel "HT-FTeq"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:notation "HT-FTeq" ;
-    skos:prefLabel "High-temperature fluid temperature, equilibrium"@en ;
+    skos:prefLabel "Hydraulic test formation temperature, equilibrium"@en ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 
 :HT-FT-perturbed
     a skos:Concept ;
-    skos:definition "High-temperature fluid-temperature measurement in perturbed conditions."@en ;
+    dcterms:source <https://doi.org/10.5880/fidgeo.2025.042> ;
+    skos:definition "Formation temperature measured during a hydraulic test, such as a drill-stem test or an aquifer test, under thermally perturbed conditions."@en ;
     skos:hiddenLabel "HT-FTpert"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:notation "HT-FTpert" ;
-    skos:prefLabel "High-temperature fluid temperature, perturbed"@en ;
+    skos:prefLabel "Hydraulic test formation temperature, perturbed"@en ;
     skos:related :HT-FT-corrected ;
     skos:topConceptOf ihfc:temperature-method ;
 .
@@ -454,9 +438,11 @@ ihfc:temperature-method
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Other temperature determination method, which must be specified in the comments."@en ;
+    skos:definition "A temperature determination method not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the method in the comments."@en ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 

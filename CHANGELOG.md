@@ -40,6 +40,25 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   the conductivity is derived from the logs rather than measured. The conductivity methods
   lose `other`, which held only `unspecified`. The correction flags' `generic`, `insitu`
   and `temperature` give way to one collection per flag column.
+- Labels and definitions are checked against the 2026.03 submission template and its
+  description:
+  - The three `HT-FT` temperature methods are hydraulic test formation temperatures, measured
+    during a hydraulic test such as a drill-stem test or an aquifer test. They were labelled as
+    high-temperature fluid temperatures.
+  - The heat-flow method `numerical` is labelled "Other numerical computations", the template's
+    term since version 2025.06, and covers any numerical computation not listed.
+    "Numerical inversion" stays as an alternative label.
+  - The AAPG correction is defined as Kehle's (1972) depth-dependent correction from the AAPG
+    Geothermal Survey of North America.
+  - `unrecognized` means the authors did not identify whether the effect is present.
+  - `random` in the conductivity strategies no longer asks for the number of samples in the
+    comments. The template moved the count to its own field.
+  - The clustered drilling and probing methods say that each site is named in the comments.
+  - Every term the template uses is a label of its concept, so a value copied from the template
+    is recognised. "unspecified" is not added as a hidden label, because the label
+    "Unspecified" already matches it.
+  - A definition says only what a concept means. Instructions to contributors, such as
+    "Specify the method in the comments", are scope notes (`skos:scopeNote`) on 15 concepts.
 
 ### Added
 
@@ -67,6 +86,12 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   affiliation and ORCID iD.
 - A release archive, `vocabularies-full.zip`, with every vocabulary in every format,
   the README, contributors, changelog and licence.
+
+### Removed
+
+- `DST` and `DST-corrected` in the temperature methods. The template replaced drill-stem
+  tests with the hydraulic test formation temperatures (`HT-FT-equilibrium`,
+  `HT-FT-perturbed`, `HT-FT-corrected`) in version 2025.06.
 
 ## [2026.1] - 2026-10-27
 

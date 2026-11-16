@@ -143,9 +143,11 @@ ihfc:conductivity-sources
 
 :other
     a skos:Concept ;
-    skos:definition "The conductivity comes from a source not listed here. Describe it in the comment field."@en ;
+    skos:definition "The conductivity comes from a source not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:conductivity-sources ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the source in the comments."@en ;
     skos:topConceptOf ihfc:conductivity-sources ;
 .
 

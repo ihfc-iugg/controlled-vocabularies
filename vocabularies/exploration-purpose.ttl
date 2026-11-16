@@ -103,9 +103,11 @@ ihfc:exploration-purpose
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "A purpose not listed here. The contributor names it in the comments."@en ;
+    skos:definition "A purpose not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:exploration-purpose ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the purpose in the comments."@en ;
     skos:topConceptOf ihfc:exploration-purpose ;
 .
 

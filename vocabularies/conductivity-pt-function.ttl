@@ -156,9 +156,10 @@ ihfc:conductivity-pt-function
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Other (specify in comments)"@en ;
-    skos:definition "Corrects thermal conductivity with a method not listed here. Describe it in the comment field."@en ;
+    skos:definition "Corrects thermal conductivity with a method not listed here."@en ;
     skos:inScheme ihfc:conductivity-pt-function ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the method in the comments."@en ;
     skos:topConceptOf ihfc:conductivity-pt-function ;
 .
 

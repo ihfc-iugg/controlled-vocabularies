@@ -60,7 +60,7 @@ ihfc:temperature-corrections
 
 :AAPG
     a skos:Concept ;
-    skos:definition "Empirical correction of bottom-hole temperatures as a function of depth, published by Harrison and others in 1983 and used for the AAPG Geothermal Survey of North America database."@en ;
+    skos:definition "Empirical correction that adds a depth-dependent temperature increment to bottom-hole temperatures, from the AAPG Geothermal Survey of North America (Kehle, 1972)."@en ;
     skos:inScheme ihfc:temperature-corrections ;
     skos:prefLabel "AAPG correction"@en ;
     skos:topConceptOf ihfc:temperature-corrections ;
@@ -105,9 +105,11 @@ ihfc:temperature-corrections
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "A published correction that is not listed. The author or DOI must be given in the comment field."@en ;
+    skos:definition "A published correction that is not listed."@en ;
+    skos:hiddenLabel "Other published correction (specify in comments)"@en ;
     skos:inScheme ihfc:temperature-corrections ;
     skos:prefLabel "Other published correction"@en ;
+    skos:scopeNote "Give the author or DOI of the correction in the comments."@en ;
     skos:topConceptOf ihfc:temperature-corrections ;
 .
 
