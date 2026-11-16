@@ -186,7 +186,6 @@ ihfc:conductivity-conditions
 :unspecified
     a skos:Concept ;
     skos:definition "The pressure and temperature conditions of the conductivity are not specified."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:conductivity-conditions ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:conductivity-conditions ;

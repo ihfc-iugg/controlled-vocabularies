@@ -136,10 +136,11 @@ ihfc:heat-flow-corrections
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Corrected (specify)"@en ;
-    skos:definition "An instrumental correction other than tilt or drift was applied to the measured temperatures. The contributor specifies it in the comments."@en ;
+    skos:definition "An instrumental correction other than tilt or drift was applied to the measured temperatures."@en ;
     skos:hiddenLabel "Corrected (specify in comments)"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Corrected"@en ;
+    skos:scopeNote "Specify the correction in the comments."@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
@@ -224,7 +225,6 @@ ihfc:heat-flow-corrections
 :unspecified
     a skos:Concept ;
     skos:definition "It is not stated or not known whether the effect applies."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;

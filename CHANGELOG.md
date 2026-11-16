@@ -48,7 +48,10 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
     comments. The template moved the count to its own field.
   - The clustered drilling and probing methods say that each site is named in the comments.
   - Every term the template uses is a label of its concept, so a value copied from the template
-    is recognised.
+    is recognised. "unspecified" is not added as a hidden label, because the label
+    "Unspecified" already matches it.
+  - A definition says only what a concept means. Instructions to contributors, such as
+    "Specify the method in the comments", are scope notes (`skos:scopeNote`) on 15 concepts.
 
 ### Added
 

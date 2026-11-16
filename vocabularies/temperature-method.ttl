@@ -292,10 +292,11 @@ ihfc:temperature-method
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Other temperature determination method, which must be specified in the comments."@en ;
+    skos:definition "A temperature determination method not listed here."@en ;
     skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the method in the comments."@en ;
     skos:topConceptOf ihfc:temperature-method ;
 .
 
@@ -359,7 +360,6 @@ ihfc:temperature-method
 :unspecified
     a skos:Concept ;
     skos:definition "Temperature determination method not specified."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:temperature-method ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:temperature-method ;

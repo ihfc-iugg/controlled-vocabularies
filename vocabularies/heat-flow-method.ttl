@@ -118,17 +118,17 @@ ihfc:heat-flow-method
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Any method not listed here. The contributor names the method in the comments."@en ;
+    skos:definition "Any method not listed here."@en ;
     skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:heat-flow-method ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the method in the comments."@en ;
     skos:topConceptOf ihfc:heat-flow-method ;
 .
 
 :unspecified
     a skos:Concept ;
     skos:definition "The method used is not stated or not known."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:heat-flow-method ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:heat-flow-method ;

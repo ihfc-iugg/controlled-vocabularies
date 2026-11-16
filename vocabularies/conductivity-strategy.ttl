@@ -74,10 +74,11 @@ ihfc:conductivity-strategy
 
 :other
     a skos:Concept ;
-    skos:definition "The conductivity over the heat-flow interval was estimated by a strategy not listed here. Describe it in the comment field."@en ;
+    skos:definition "The conductivity over the heat-flow interval was estimated by a strategy not listed here."@en ;
     skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:conductivity-strategy ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the strategy in the comments."@en ;
     skos:topConceptOf ihfc:conductivity-strategy ;
 .
 
@@ -93,7 +94,6 @@ ihfc:conductivity-strategy
 :unspecified
     a skos:Concept ;
     skos:definition "The strategy used to estimate the conductivity is not specified."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:conductivity-strategy ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:conductivity-strategy ;

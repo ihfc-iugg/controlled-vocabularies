@@ -59,10 +59,11 @@ ihfc:conductivity-location
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Literature/unspecified"@en ;
-    skos:definition "The conductivity comes from published values, or its location is not known. Use it only when the conductivity source is assumed from literature."@en ;
+    skos:definition "The conductivity comes from published values, or its location is not known."@en ;
     skos:hiddenLabel "Literature-unspecified"@en ;
     skos:inScheme ihfc:conductivity-location ;
     skos:prefLabel "Literature or unspecified"@en ;
+    skos:scopeNote "Use only when the thermal conductivity source is assumed from literature."@en ;
     skos:topConceptOf ihfc:conductivity-location ;
 .
 
