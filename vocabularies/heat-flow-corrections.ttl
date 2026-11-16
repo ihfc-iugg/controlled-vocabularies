@@ -126,7 +126,7 @@ ihfc:heat-flow-corrections
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Considered – T"@en ;
     skos:definition "In-situ temperature was taken into account for the reported thermal conductivity value."@en ;
-    skos:hiddenLabel "Considered - t"@en ;
+    skos:hiddenLabel "Considered - T"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Temperature considered"@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;
@@ -136,9 +136,11 @@ ihfc:heat-flow-corrections
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:altLabel "Corrected (specify)"@en ;
-    skos:definition "An instrumental correction other than tilt or drift was applied to the measured temperatures. The contributor specifies it in the comments."@en ;
+    skos:definition "An instrumental correction other than tilt or drift was applied to the measured temperatures."@en ;
+    skos:hiddenLabel "Corrected (specify in comments)"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Corrected"@en ;
+    skos:scopeNote "Specify the correction in the comments."@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;
 .
 
@@ -213,7 +215,7 @@ ihfc:heat-flow-corrections
 :unrecognized
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "The effect was not recognized at the site."@en ;
+    skos:definition "The authors did not identify whether the effect is present at the site."@en ;
     skos:hiddenLabel "not recognized"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Not recognized"@en ;
@@ -223,7 +225,6 @@ ihfc:heat-flow-corrections
 :unspecified
     a skos:Concept ;
     skos:definition "It is not stated or not known whether the effect applies."@en ;
-    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:heat-flow-corrections ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:heat-flow-corrections ;

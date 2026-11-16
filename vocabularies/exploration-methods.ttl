@@ -96,6 +96,7 @@ ihfc:exploration-methods
     skos:hiddenLabel "Drilling-Clustering"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Drilling (clustered)"@en ;
+    skos:scopeNote "The name and borehole depth of each site should be specified in the comments, separated by semicolons."@en ;
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
@@ -120,9 +121,11 @@ ihfc:exploration-methods
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Access by a means not listed here. The contributor names it in the comments."@en ;
+    skos:definition "Access by a means not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the means of access in the comments."@en ;
     skos:topConceptOf ihfc:exploration-methods ;
 .
 
@@ -132,6 +135,7 @@ ihfc:exploration-methods
     skos:hiddenLabel "Probing-Clustering"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Probing (clustered)"@en ;
+    skos:scopeNote "The name of each site should be specified in the comments, separated by semicolons."@en ;
     skos:topConceptOf ihfc:exploration-methods ;
 .
 

@@ -15,6 +15,12 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
     dcterms:bibliographicCitation "Fuchs, S., Beardsmore, G., Chiozzi, P., Espinoza-Ojeda, O. M., Gola, G., Gosnold, W., Harris, R., Jennings, S., Liu, S., Negrete-Aranda, R., Neumann, F., Norden, B., Poort, J., Rajver, D., Ray, L., Richards, M., Smith, J., Tanaka, A., and Verdoya, M. (2021). A new database structure for the IHFC Global Heat Flow Database. International Journal of Terrestrial Heat Flow and Applied Geothermics, 4(1), 1–14."@en ;
 .
 
+<https://doi.org/10.5880/fidgeo.2025.042>
+    a dcterms:BibliographicResource ;
+    dcterms:bibliographicCitation "Fuchs, S., Neumann, F., Balkan-Pazvantoğlu, E., Elbarbary, S., Petrunin, A. G., Jennings, S., Elger, K., Norden, B. (2025). Global Heat Flow Database Data Template. V. 2026.03. GFZ Data Services."@en ;
+    dcterms:title "Global Heat Flow Database Data Template"@en ;
+.
+
 <https://doi.org/10.5880/fidgeo.2026.065>
     a dcterms:BibliographicResource ;
     dcterms:bibliographicCitation "Jennings, Samuel; Neumann, Florian; Norden, Ben; Balkan-Pazvantoğlu, Elif; Elbarbary, Samah; Petrunin, Alexey G.; Elger, Kirsten; Fuchs, Sven (2026): IHFC Controlled Vocabularies for the Global Heat Flow Database. GFZ Data Services. https://doi.org/10.5880/fidgeo.2026.065"@en ;
@@ -43,7 +49,8 @@ ihfc:heat-flow-method
     dcterms:publisher <https://ror.org/04z8jg394> ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
-        <https://doi.org/10.31214/ijthfa.v4i1.62> ;
+        <https://doi.org/10.31214/ijthfa.v4i1.62> ,
+        <https://doi.org/10.5880/fidgeo.2025.042> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
         :bootstrap ,
@@ -98,20 +105,24 @@ ihfc:heat-flow-method
 
 :numerical
     a skos:Concept ;
-    dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "The heat-flow value comes from a computational inversion of a borehole heat-transport model."@en ;
-    skos:hiddenLabel "Other numerical computations"@en ;
+    dcterms:source
+        <https://doi.org/10.1016/j.tecto.2023.229976> ,
+        <https://doi.org/10.5880/fidgeo.2025.042> ;
+    skos:altLabel "Numerical inversion"@en ;
+    skos:definition "The heat-flow value is computed numerically by a method other than those listed, for example by inverting a borehole heat-transport model."@en ;
     skos:inScheme ihfc:heat-flow-method ;
-    skos:prefLabel "Numerical inversion"@en ;
+    skos:prefLabel "Other numerical computations"@en ;
     skos:topConceptOf ihfc:heat-flow-method ;
 .
 
 :other
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "Any method not listed here. The contributor names the method in the comments."@en ;
+    skos:definition "Any method not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:heat-flow-method ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the method in the comments."@en ;
     skos:topConceptOf ihfc:heat-flow-method ;
 .
 

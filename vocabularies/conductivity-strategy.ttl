@@ -74,16 +74,18 @@ ihfc:conductivity-strategy
 
 :other
     a skos:Concept ;
-    skos:definition "The conductivity over the heat-flow interval was estimated by a strategy not listed here. Describe it in the comment field."@en ;
+    skos:definition "The conductivity over the heat-flow interval was estimated by a strategy not listed here."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:conductivity-strategy ;
     skos:prefLabel "Other"@en ;
+    skos:scopeNote "Specify the strategy in the comments."@en ;
     skos:topConceptOf ihfc:conductivity-strategy ;
 .
 
 :random
     a skos:Concept ;
     skos:altLabel "Random or periodic depth sampling (number)"@en ;
-    skos:definition "The conductivity was obtained from samples or measurements taken at random or regular depths along the heat-flow interval. Give the number in the comment field."@en ;
+    skos:definition "The conductivity was obtained from samples or measurements taken at random or regular depths along the heat-flow interval."@en ;
     skos:inScheme ihfc:conductivity-strategy ;
     skos:prefLabel "Random or periodic depth sampling"@en ;
     skos:topConceptOf ihfc:conductivity-strategy ;
