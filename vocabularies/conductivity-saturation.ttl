@@ -75,6 +75,7 @@ ihfc:conductivity-saturation
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     skos:definition "The saturation state is not one of the listed states. Describe it in the comment field."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:conductivity-saturation ;
     skos:notation "other" ;
     skos:prefLabel "Other"@en ;
@@ -133,6 +134,7 @@ ihfc:conductivity-saturation
 :unspecified
     a skos:Concept ;
     skos:definition "The saturation state is not specified."@en ;
+    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:conductivity-saturation ;
     skos:notation "unspec" ;
     skos:prefLabel "Unspecified"@en ;

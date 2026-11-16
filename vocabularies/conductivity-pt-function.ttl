@@ -533,6 +533,7 @@ ihfc:conductivity-pt-function
 :unspecified
     a skos:Concept ;
     skos:definition "The method used to correct the conductivity is not specified."@en ;
+    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:conductivity-pt-function ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:conductivity-pt-function ;

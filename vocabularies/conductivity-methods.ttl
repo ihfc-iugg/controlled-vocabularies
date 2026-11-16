@@ -126,6 +126,7 @@ ihfc:conductivity-methods
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "A laboratory measurement method not listed here. Describe it in the comment field."@en ;
+    skos:hiddenLabel "Lab - other (specify in comments)"@en ;
     skos:inScheme ihfc:conductivity-methods ;
     skos:prefLabel "Lab - other"@en ;
     skos:topConceptOf ihfc:conductivity-methods ;
@@ -219,6 +220,7 @@ ihfc:conductivity-methods
 :unspecified
     a skos:Concept ;
     skos:definition "The method used to determine the conductivity is not specified."@en ;
+    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:conductivity-methods ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:conductivity-methods ;

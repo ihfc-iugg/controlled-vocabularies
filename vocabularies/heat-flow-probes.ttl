@@ -176,6 +176,7 @@ ihfc:heat-flow-probes
 :unspecified
     a skos:Concept ;
     skos:definition "The probe type is not stated or not known."@en ;
+    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:heat-flow-probes ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:heat-flow-probes ;

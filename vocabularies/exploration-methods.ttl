@@ -92,7 +92,7 @@ ihfc:exploration-methods
 
 :drilling-clustering
     a skos:Concept ;
-    skos:definition "Drilling in which the entry stands for a cluster of boreholes close together rather than for a single borehole."@en ;
+    skos:definition "Drilling in which the entry stands for a cluster of boreholes close together rather than for a single borehole. The name and borehole depth of each site are given in the comments, separated by semicolons."@en ;
     skos:hiddenLabel "Drilling-Clustering"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Drilling (clustered)"@en ;
@@ -121,6 +121,7 @@ ihfc:exploration-methods
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "Access by a means not listed here. The contributor names it in the comments."@en ;
+    skos:hiddenLabel "Other (specify in comments)"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Other"@en ;
     skos:topConceptOf ihfc:exploration-methods ;
@@ -128,7 +129,7 @@ ihfc:exploration-methods
 
 :probing-clustering
     a skos:Concept ;
-    skos:definition "Probing in which the entry stands for a cluster of probe penetrations close together rather than for a single penetration."@en ;
+    skos:definition "Probing in which the entry stands for a cluster of probe penetrations close together rather than for a single penetration. The name of each site is given in the comments, separated by semicolons."@en ;
     skos:hiddenLabel "Probing-Clustering"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Probing (clustered)"@en ;
@@ -166,6 +167,7 @@ ihfc:exploration-methods
 :unspecified
     a skos:Concept ;
     skos:definition "The means of access is not stated or not known."@en ;
+    skos:hiddenLabel "unspecified"@en ;
     skos:inScheme ihfc:exploration-methods ;
     skos:prefLabel "Unspecified"@en ;
     skos:topConceptOf ihfc:exploration-methods ;
