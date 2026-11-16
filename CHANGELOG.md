@@ -72,7 +72,7 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   - in the correction flags, one for each of the nine flag columns, from `in-situ`
     (`corr_IS_flag`) and `instrumental` (`corr_T_flag`) to `heat-refraction` (`corr_HR_flag`)
   - in the temperature methods, `top` and `bottom`. The bottom of the interval does not
-    accept `surface`, and neither accepts `DST` or `DST-corrected`.
+    accept `surface`.
 - Collections that group concepts by what they are:
   - temperature methods: `continuous-log`, `point-measurement` and `estimated` for the kind
     of measurement, and `equilibrium`, `perturbed` and `corrected` for the thermal state of

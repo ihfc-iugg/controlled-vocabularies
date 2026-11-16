@@ -133,7 +133,6 @@ ihfc:temperature-method
     skos:definition "Temperatures measured in a perturbed borehole and corrected for the perturbation."@en ;
     skos:member
         :BHT-corrected ,
-        :DST-corrected ,
         :DTS-corrected ,
         :HT-FT-corrected ,
         :RTD-corrected ,
@@ -168,7 +167,6 @@ ihfc:temperature-method
     skos:definition "Temperatures measured in a borehole that is still thermally perturbed, and not corrected."@en ;
     skos:member
         :BHT ,
-        :DST ,
         :DTS-perturbed ,
         :HT-FT-perturbed ,
         :RTD-perturbed ,
@@ -182,8 +180,6 @@ ihfc:temperature-method
     skos:member
         :BHT ,
         :BHT-corrected ,
-        :DST ,
-        :DST-corrected ,
         :HT-FT-corrected ,
         :HT-FT-equilibrium ,
         :HT-FT-perturbed ,
