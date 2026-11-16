@@ -49,7 +49,7 @@ ihfc:geographic-environments
         :offshore-continental ,
         :offshore-marine ,
         :onshore-continental ,
-        :onshore-marine ,
+        :onshore-lake-river ,
         :unspecified ;
     skos:prefLabel "Geographic environments"@en ;
     skos:scopeNote "Lists the values allowed in the field environment of the Global Heat Flow Database."@en ;
@@ -69,7 +69,7 @@ ihfc:geographic-environments
     skos:definition "Environments where the site lies on land, including under inland water."@en ;
     skos:member
         :onshore-continental ,
-        :onshore-marine ;
+        :onshore-lake-river ;
     skos:prefLabel "Onshore environments"@en ;
 .
 
@@ -97,7 +97,7 @@ ihfc:geographic-environments
     skos:topConceptOf ihfc:geographic-environments ;
 .
 
-:onshore-marine
+:onshore-lake-river
     a skos:Concept ;
     skos:definition "The site is on land but under inland water, for example the bed of a lake or river."@en ;
     skos:hiddenLabel "Onshore (lake-river-etc.)"@en ;

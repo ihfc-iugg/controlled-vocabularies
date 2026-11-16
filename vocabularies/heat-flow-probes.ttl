@@ -47,15 +47,16 @@ ihfc:heat-flow-probes
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
         :other ,
-        :outrigger-autonomous-no-corer ,
-        :outrigger-autonomous-with-corer ,
+        :outrigger-autonomous ,
+        :outrigger-autonomous-corer ,
         :outrigger-ewing ,
+        :outrigger-ewing-corer ,
         :outrigger-haenel ,
-        :outrigger-hybrid-lister-hylo ,
-        :outrigger-lister ,
+        :outrigger-hybrid-lister ,
+        :outrigger-lister-corer ,
         :outrigger-von-herzen ,
         :single-steel ,
-        :single-steel-insituTC ,
+        :single-steel-in-situ-TC ,
         :submersible ,
         :unspecified ,
         :violin-bow ;
@@ -73,7 +74,7 @@ ihfc:heat-flow-probes
     skos:topConceptOf ihfc:heat-flow-probes ;
 .
 
-:outrigger-autonomous-no-corer
+:outrigger-autonomous
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "An outrigger probe with miniature autonomous temperature loggers that is used without a corer, so no core is recovered."@en ;
@@ -82,7 +83,7 @@ ihfc:heat-flow-probes
     skos:topConceptOf ihfc:heat-flow-probes ;
 .
 
-:outrigger-autonomous-with-corer
+:outrigger-autonomous-corer
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "An outrigger probe with miniature autonomous temperature loggers, mounted on a sediment gravity-core tube so that a core is recovered."@en ;
@@ -92,6 +93,14 @@ ihfc:heat-flow-probes
 .
 
 :outrigger-ewing
+    a skos:Concept ;
+    skos:definition "An outrigger probe of the Ewing design, with thermistors in fins mounted on the outside of a barrel, that is used without a corer, so no core is recovered."@en ;
+    skos:inScheme ihfc:heat-flow-probes ;
+    skos:prefLabel "Outrigger probe (Ewing) without corer"@en ;
+    skos:topConceptOf ihfc:heat-flow-probes ;
+.
+
+:outrigger-ewing-corer
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "A standard core barrel with thermistors in fins mounted on the outside, measuring the temperature gradient while the corer recovers a core."@en ;
@@ -109,7 +118,7 @@ ihfc:heat-flow-probes
     skos:topConceptOf ihfc:heat-flow-probes ;
 .
 
-:outrigger-hybrid-lister-hylo
+:outrigger-hybrid-lister
     a skos:Concept ;
     skos:altLabel "HyLO probe"@en ;
     skos:definition "A portable probe that combines the Lister violin-bow design with an outrigger mount, designed for rapid marine heat-flow surveys."@en ;
@@ -119,7 +128,7 @@ ihfc:heat-flow-probes
     skos:topConceptOf ihfc:heat-flow-probes ;
 .
 
-:outrigger-lister
+:outrigger-lister-corer
     a skos:Concept ;
     skos:inScheme ihfc:heat-flow-probes ;
     skos:prefLabel "Outrigger probe (Lister) with corer"@en ;
@@ -146,7 +155,7 @@ ihfc:heat-flow-probes
     skos:topConceptOf ihfc:heat-flow-probes ;
 .
 
-:single-steel-insituTC
+:single-steel-in-situ-TC
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
     skos:definition "A single steel probe of Bullard's design that also measures the thermal conductivity of the sediment in place."@en ;

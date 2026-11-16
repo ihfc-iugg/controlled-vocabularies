@@ -46,18 +46,18 @@ ihfc:conductivity-saturation
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
     rdfs:seeAlso <https://github.com/ihfc-iugg/controlled-vocabularies> ;
     skos:hasTopConcept
-        :dryMeasured ,
+        :dry-measured ,
         :other ,
         :recovered ,
-        :saturatedCalculated ,
-        :saturatedInSitu ,
-        :saturatedMeasured ,
+        :saturated-calculated ,
+        :saturated-in-situ ,
+        :saturated-measured ,
         :unspecified ;
     skos:prefLabel "Thermal conductivity saturation states"@en ;
     skos:scopeNote "Lists the values allowed in the field tc_saturation of the Global Heat Flow Database."@en ;
 .
 
-:dryMeasured
+:dry-measured
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -93,7 +93,7 @@ ihfc:conductivity-saturation
     skos:topConceptOf ihfc:conductivity-saturation ;
 .
 
-:saturatedCalculated
+:saturated-calculated
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -105,7 +105,7 @@ ihfc:conductivity-saturation
     skos:topConceptOf ihfc:conductivity-saturation ;
 .
 
-:saturatedInSitu
+:saturated-in-situ
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
@@ -118,7 +118,7 @@ ihfc:conductivity-saturation
     skos:topConceptOf ihfc:conductivity-saturation ;
 .
 
-:saturatedMeasured
+:saturated-measured
     a skos:Concept ;
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
