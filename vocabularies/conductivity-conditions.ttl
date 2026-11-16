@@ -60,38 +60,27 @@ ihfc:conductivity-conditions
     skos:scopeNote "Lists the values allowed in the field tc_pT_conditions of the Global Heat Flow Database."@en ;
 .
 
-:actual
+:ambient
     a skos:Collection ;
-    skos:definition "Determinations made at the actual conditions of the depth interval of the heat-flow determination."@en ;
-    skos:member :actual-in-situ ;
-    skos:prefLabel "Actual conditions"@en ;
+    skos:definition "Determinations made at the ambient pressure and temperature of the laboratory, whether or not those conditions were recorded."@en ;
+    skos:member
+        :recorded-ambient ,
+        :unrecorded-ambient ;
+    skos:prefLabel "Ambient conditions"@en ;
 .
 
-:corrected
+:in-situ
     a skos:Collection ;
-    skos:definition "Determinations made under laboratory pressure and temperature conditions and then corrected to the conditions of the target depth."@en ;
+    skos:definition "Determinations made at, replicating, or corrected to the pressure or temperature of the target depth."@en ;
     skos:member
+        :actual-in-situ ,
         :corrected-T ,
         :corrected-p ,
-        :corrected-pT ;
-    skos:prefLabel "Corrected conditions"@en ;
-.
-
-:recorded
-    a skos:Collection ;
-    skos:definition "Determinations whose pressure and temperature conditions were recorded when the conductivity was measured."@en ;
-    skos:member :recorded-ambient ;
-    skos:prefLabel "Recorded conditions"@en ;
-.
-
-:replicated
-    a skos:Collection ;
-    skos:definition "Determinations where the conditions of the target depth are replicated under laboratory conditions."@en ;
-    skos:member
+        :corrected-pT ,
         :replicated-T ,
         :replicated-p ,
         :replicated-pT ;
-    skos:prefLabel "Replicated conditions"@en ;
+    skos:prefLabel "In-situ conditions"@en ;
 .
 
 :actual-in-situ

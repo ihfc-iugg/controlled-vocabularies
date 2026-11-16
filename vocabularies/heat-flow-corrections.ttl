@@ -63,19 +63,43 @@ ihfc:heat-flow-corrections
     skos:scopeNote "Lists the values allowed in the fields corr_IS_flag, corr_T_flag, corr_S_flag, corr_E_flag, corr_TOPO_flag, corr_PAL_flag, corr_SUR_flag, corr_CONV_flag and corr_HR_flag of the Global Heat Flow Database."@en ;
 .
 
-:generic
+:convection
     a skos:Collection ;
-    skos:definition "Values for the flags recording whether an effect on the heat flow was present and corrected. They apply to the fields corr_S_flag, corr_E_flag, corr_TOPO_flag, corr_PAL_flag, corr_SUR_flag, corr_CONV_flag and corr_HR_flag."@en ;
+    skos:definition "Values for the flag recording whether an effect of convection processes was present and whether it was corrected (corr_CONV_flag)."@en ;
     skos:member
         :present-corrected ,
         :present-insignificant ,
         :present-uncorrected ,
         :unrecognized ,
         :unspecified ;
-    skos:prefLabel "Environmental effect flags"@en ;
+    skos:prefLabel "Convection processes"@en ;
 .
 
-:insitu
+:erosion
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether an erosion effect was present and whether it was corrected (corr_E_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Erosion effect"@en ;
+.
+
+:heat-refraction
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether a heat refraction effect was present and whether it was corrected (corr_HR_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Heat refraction effect"@en ;
+.
+
+:in-situ
     a skos:Collection ;
     skos:definition "Values for the flag recording whether in-situ pressure and temperature were considered for the thermal conductivity (corr_IS_flag)."@en ;
     skos:member
@@ -84,10 +108,10 @@ ihfc:heat-flow-corrections
         :considered-pT ,
         :not-considered ,
         :unspecified ;
-    skos:prefLabel "In-situ conditions flags"@en ;
+    skos:prefLabel "In-situ thermal properties"@en ;
 .
 
-:temperature
+:instrumental
     a skos:Collection ;
     skos:definition "Values for the flag recording whether instrumental corrections were applied to the measured temperatures (corr_T_flag)."@en ;
     skos:member
@@ -96,7 +120,55 @@ ihfc:heat-flow-corrections
         :tilt-corrected ,
         :uncorrected ,
         :unspecified ;
-    skos:prefLabel "Temperature correction flags"@en ;
+    skos:prefLabel "Instrumental temperature corrections"@en ;
+.
+
+:paleoclimate
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether a paleoclimatic effect was present and whether it was corrected (corr_PAL_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Paleoclimatic effect"@en ;
+.
+
+:sedimentation
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether a sedimentation effect was present and whether it was corrected (corr_S_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Sedimentation effect"@en ;
+.
+
+:topography
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether a topographic effect was present and whether it was corrected (corr_TOPO_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Topographic effect"@en ;
+.
+
+:transient-surface-temperature
+    a skos:Collection ;
+    skos:definition "Values for the flag recording whether an effect of transient surface temperature was present and whether it was corrected (corr_SUR_flag)."@en ;
+    skos:member
+        :present-corrected ,
+        :present-insignificant ,
+        :present-uncorrected ,
+        :unrecognized ,
+        :unspecified ;
+    skos:prefLabel "Transient surface temperature"@en ;
 .
 
 :considered-p
