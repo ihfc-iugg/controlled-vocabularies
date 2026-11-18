@@ -60,15 +60,6 @@ ihfc:conductivity-conditions
     skos:scopeNote "Lists the values allowed in the field tc_pT_conditions of the Global Heat Flow Database."@en ;
 .
 
-:ambient
-    a skos:Collection ;
-    skos:definition "Determinations made at the ambient pressure and temperature of the laboratory, whether or not those conditions were recorded."@en ;
-    skos:member
-        :recorded-ambient ,
-        :unrecorded-ambient ;
-    skos:prefLabel "Ambient conditions"@en ;
-.
-
 :in-situ
     a skos:Collection ;
     skos:definition "Determinations made at, replicating, or corrected to the pressure or temperature of the target depth."@en ;
@@ -77,6 +68,7 @@ ihfc:conductivity-conditions
         :corrected-T ,
         :corrected-p ,
         :corrected-pT ,
+        :recorded-ambient ,
         :replicated-T ,
         :replicated-p ,
         :replicated-pT ;
@@ -88,7 +80,7 @@ ihfc:conductivity-conditions
     dcterms:source
         <https://doi.org/10.1016/j.tecto.2023.229976> ,
         <https://doi.org/10.31214/ijthfa.v4i1.62> ;
-    skos:definition "The conductivity was determined at the actual pressure and temperature of the depth interval of the heat-flow determination."@en ;
+    skos:definition "The conductivity was determined by probe sensing at the actual pressure and temperature of the depth interval of the heat-flow determination."@en ;
     skos:inScheme ihfc:conductivity-conditions ;
     skos:prefLabel "Actual in-situ (pT) conditions"@en ;
     skos:topConceptOf ihfc:conductivity-conditions ;
@@ -124,7 +116,7 @@ ihfc:conductivity-conditions
 :recorded-ambient
     a skos:Concept ;
     dcterms:source <https://doi.org/10.1016/j.tecto.2023.229976> ;
-    skos:definition "The conductivity was measured at ambient laboratory pressure and temperature, and those conditions were recorded."@en ;
+    skos:definition "The conductivity was determined by sensing in a borehole, under the true pressure and temperature of the target depth."@en ;
     skos:inScheme ihfc:conductivity-conditions ;
     skos:prefLabel "Recorded ambient pT conditions"@en ;
     skos:topConceptOf ihfc:conductivity-conditions ;
