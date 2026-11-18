@@ -34,12 +34,19 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
     functions for each are told apart, and `ZothHaenal1988` and `Radcliff1960` are spelt as
     the authors' names are (`T-zoth-haenel-1988`, `pT-ratcliffe-1960`).
 - Collections that held one concept, or that grouped concepts only the way the quality
-  scoring does, are gone. In the conductivity conditions `ambient` and `in-situ` replace
-  `actual`, `recorded`, `replicated` and `corrected`. In the conductivity sources `measured`
+  scoring does, are gone. In the conductivity conditions `in-situ` replaces `actual`,
+  `recorded`, `replicated` and `corrected`. In the conductivity sources `measured`
   and `estimated` replace `computation` and `in-situ`, and `well-log` is estimated, because
   the conductivity is derived from the logs rather than measured. The conductivity methods
   lose `other`, which held only `unspecified`. The correction flags' `generic`, `insitu`
   and `temperature` give way to one collection per flag column.
+- Each pressure and temperature function names the publication it comes from with
+  `dcterms:references`, and every function cites Fuchs et al. (2023), where the list is
+  defined, in `dcterms:source`. Each publication is described once in the file with its
+  citation. Twelve functions gain a reference: ten by DOI, Chapman & Furlong (1992) by ISBN
+  and Kutas & Gordienko (1971) by its WorldCat record. Five journal articles with no
+  identifier of their own carry their citation on the concept. Ramazanova & Emirov (2012)
+  has no reference yet.
 - Labels and definitions are checked against the 2026.03 submission template and its
   description:
   - The three `HT-FT` temperature methods are hydraulic test formation temperatures, measured
@@ -57,6 +64,11 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   - Every term the template uses is a label of its concept, so a value copied from the template
     is recognised. "unspecified" is not added as a hidden label, because the label
     "Unspecified" already matches it.
+  - "Recorded ambient pT conditions" is a conductivity determined by sensing in a borehole,
+    under the true conditions of the target depth, as the field description in Fuchs et al.
+    (2021) and (2023) says. It was defined as a laboratory measurement at room conditions. It
+    is now in the `in-situ` collection. "Actual in-situ (pT) conditions" is a conductivity
+    determined by probe sensing.
   - A definition says only what a concept means. Instructions to contributors, such as
     "Specify the method in the comments", are scope notes (`skos:scopeNote`) on 15 concepts.
 
@@ -74,11 +86,8 @@ All notable changes to the vocabularies are recorded here. Versions are calendar
   - in the temperature methods, `top` and `bottom`. The bottom of the interval does not
     accept `surface`.
 - Collections that group concepts by what they are:
-  - temperature methods: `continuous-log`, `point-measurement` and `estimated` for the kind
-    of measurement, and `equilibrium`, `perturbed` and `corrected` for the thermal state of
-    the borehole
   - conductivity sources: `measured` and `estimated`
-  - conductivity conditions: `ambient` and `in-situ`
+  - conductivity conditions: `in-situ`
   - conductivity saturation: `saturated`
 - A documentation site, with a page for every vocabulary, concept and collection, and its
   RDF in every format beside it.
